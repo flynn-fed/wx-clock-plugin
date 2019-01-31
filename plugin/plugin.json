@@ -1,0 +1,6 @@
+{
+  "publicComponents": {
+    "list": "components/clock/clock"
+  },
+  "main": "index.js"
+}

@@ -1,0 +1,96 @@
+
+.clock {
+  width: 500rpx;
+  height: 500rpx;
+  margin: 100rpx auto;
+}
+.clockWrap {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: relative;
+}
+.clockWrap .owlB {
+  width: 400rpx;
+  height: 400rpx;
+  position: absolute;
+  top: 50rpx;
+  left: 60rpx;
+}
+.clockWrap .owlL ,
+.clockWrap .owlR {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top:170rpx;
+  transform:rotate(0deg);
+  transform-origin: 60% 110%;
+}
+.clockWrap .owlL {
+  left: 195rpx;
+}
+.clockWrap .owlR {
+  left: 280rpx;
+}
+.clockWrap ul{
+  display: block;
+  position: relative;
+  background: transparent;
+}
+.clockWrap ul li {
+  position: absolute;
+  left: 242rpx;
+  top: 0;
+  transform-origin: center 250rpx;
+}
+.clockWrap li .dots {
+  display: block;
+  width: 10rpx;
+  height: 10rpx;
+  background: #333;
+  /* border-radius: 50%; */
+}
+.clockWrap li .dotsData{
+  display: block;
+  width: 8rpx;
+  height: 24rpx;
+  background: rgb(0, 0, 0);
+}
+.hours {
+  display: block;
+  position: absolute;
+  top: 100rpx;
+  left: 240rpx;
+  width: 12px;
+  height: 150rpx;
+  background: rgb(247, 247, 141);
+  z-index: 3;
+}
+.minuts {
+  display: block;
+  position: absolute;
+  top: 50rpx;
+  left: 240rpx;
+  width: 8px;
+  height: 200rpx;
+  background: rgb(140, 248, 140);
+  z-index: 4;
+}
+.seconds {
+  display: block;
+  position: absolute;
+  top: 15rpx;
+  left: 240rpx;
+  width: 5px;
+  height: 240rpx;
+  background: rgb(13, 157, 240);
+  z-index: 5;
+}
+.hours,.minuts,.seconds {
+  transform: rotate(180deg);
+  /* transform-origin: 40% 10%; */
+  transform-origin: bottom;
+}

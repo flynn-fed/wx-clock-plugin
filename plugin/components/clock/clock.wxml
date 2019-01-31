@@ -1,0 +1,20 @@
+<view class='clock'>
+  <div class='clockWrap'>
+    <image class='owlB' src='/images/owl.png'></image>
+    <image class='owlL'  
+            style='transform:rotate({{seconds*6}}deg)' 
+            src='/images/eyeL.png'></image>
+    <image class='owlR'  
+            style='transform:rotate({{seconds*6}}deg)' 
+            src='/images/eyeR.png'></image>
+    <ul>
+      <li wx:for='{{60}}' style='transform:rotate({{item*6}}deg)'>
+        <span class='dots' wx:if='{{(item % 5) != 0}}'></span>
+        <span class='dotsData' wx:if='{{(item % 5) == 0}}'></span>
+      </li>
+    </ul>
+    <div class='hours' style='transform:rotate({{hours*30}}deg)'></div>
+    <div class='minuts' style='transform:rotate({{minuts*6}}deg)'></div>
+    <div class='seconds' style='transform:rotate({{seconds*6}}deg)'></div>
+  </div>
+</view>
